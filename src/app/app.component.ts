@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstapp';
+   name:string="Parent Child Demonstration";
+   things:string[]=["Vegetables","Fruits","Spices"]
+   stock:string[][]=
+   [
+     ['Carrot','Onion',"Tomato","Plantain"],
+     ["Orange","Apple","Banana","Cherry"],
+     ["Cinnamon","Mustard","Pepper","Cummin"]
+   ]
+
 }

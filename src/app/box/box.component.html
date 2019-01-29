@@ -1,0 +1,18 @@
+<div [ngClass]="myclass">
+  <button (click)="toggleTheme()">Toggle theme</button>
+
+  <h3>{{type}}</h3>
+  <hr>
+   <ul>
+     <li *ngFor="let x of items">
+      {{x}}
+     </li>
+   </ul>
+
+  
+  <input type="text">
+  <button>Add Item</button>
+</div>
+
+
+<!-- css class and ngClass-->

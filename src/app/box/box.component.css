@@ -1,0 +1,20 @@
+.theme1{
+  min-height: 300px;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: lightseagreen;
+  color: lavender;
+  float: left;
+}
+
+.theme2{
+    min-height: 300px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightcoral;
+    color: rgb(39, 39, 68);
+    float: left;
+    box-shadow: 5px 5px 5px lightgray;
+  }
