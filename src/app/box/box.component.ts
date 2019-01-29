@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -8,7 +8,9 @@ import { Component, OnInit,Input } from '@angular/core';
 export class BoxComponent implements OnInit {
  @Input('title') type:string="Not Initialized";
  @Input('things') items:string[]=["item1","item2","item3","item4"];
+ @Output('send') sendParent:EventEmitter<string>=new EventEmitter<string>();
  myclass:string="theme1";
+ thing:string;
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +20,11 @@ export class BoxComponent implements OnInit {
 
     this.myclass=this.myclass=="theme1"?"theme2":"theme1";
   }
+
+  handleClick(){
+     this.sendParent.emit(this.thing);
+  }
+
+  
 
 }

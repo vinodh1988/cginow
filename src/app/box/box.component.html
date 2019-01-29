@@ -10,9 +10,10 @@
    </ul>
 
   
-  <input type="text">
-  <button>Add Item</button>
-</div>
+  <input type="text" [(ngModel)]="thing">
+  <button (click)="handleClick()">Add Item</button>
+ <br> Thing name you typed >> {{thing}}
+</div> 
 
 
 <!-- css class and ngClass-->

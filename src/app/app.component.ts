@@ -13,6 +13,12 @@ export class AppComponent {
      ['Carrot','Onion',"Tomato","Plantain"],
      ["Orange","Apple","Banana","Cherry"],
      ["Cinnamon","Mustard","Pepper","Cummin"]
-   ]
+   ];
+   message:string;
 
+
+   receiveData(message,index){
+      this.message=message;
+      this.stock[index].push(message);
+   }
 }
